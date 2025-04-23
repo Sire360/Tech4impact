@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Tech for Impact</title>
+  <title>Tech For Impact</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -10,7 +10,167 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-    /* Keep your existing styles as they look good for a tech-themed site */
+    body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #2b2b2b;
+    }
+    h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #094074;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #094074;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }  
+    .jumbotron {
+      background-color: #3c6997;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+    }
+    .container-fluid {
+      padding: 60px 50px;
+    }
+    .bg-grey {
+      background-color: #f6f6f6;
+    }
+    .logo-small {
+      color: #3c6997;
+      font-size: 50px;
+    }
+    .logo {
+      color: #3c6997;
+      font-size: 200px;
+    }
+    .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+    }
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+    }
+    .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #3c6997;
+    }
+    .carousel-indicators li {
+      border-color: #3c6997;
+    }
+    .carousel-indicators li.active {
+      background-color: #3c6997;
+    }
+    .item h4 {
+      font-size: 19px;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+    }
+    .item span {
+      font-style: normal;
+    }
+    .panel {
+      border: 1px solid #3c6997;
+      border-radius: 0 !important;
+      transition: box-shadow 0.5s;
+    }
+    .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+    }
+    .panel-footer .btn:hover {
+      border: 1px solid #3c6997;
+      background-color: #fff !important;
+      color: #3c6997;
+    }
+    .panel-heading {
+      color: #fff !important;
+      background-color: #3c6997 !important;
+      padding: 25px;
+    }
+    .panel-footer {
+      background-color: white !important;
+    }
+    .panel-footer h3 {
+      font-size: 32px;
+    }
+    .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+    }
+    .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #3c6997;
+      color: #fff;
+    }
+    .navbar {
+      margin-bottom: 0;
+      background-color: #094074;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+    }
+    .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+    }
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #094074 !important;
+      background-color: #fff !important;
+    }
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+    }
+    footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #3c6997;
+    }
+    .slideanim {
+      visibility: hidden;
+    }
+    .slide {
+      animation-name: slide;
+      animation-duration: 1s;
+      visibility: visible;
+    }
+    @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translateY(70%);
+      } 
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+      }
+      .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .logo {
+        font-size: 150px;
+      }
+    }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -23,14 +183,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Tech for Impact</a>
+      <a class="navbar-brand" href="#myPage">Tech For Impact</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SOLUTIONS</a></li>
-        <li><a href="#portfolio">PROJECTS</a></li>
-        <li><a href="#partners">PARTNERS</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
@@ -38,13 +197,13 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Tech for Impact</h1> 
-  <p>Innovating for Sustainable Change</p> 
+  <h1>Tech For Impact</h1> 
+  <p>Driving innovation for social good</p> 
   <form>
     <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Join our newsletter" required>
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
       <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
+        <button type="button" class="btn btn-primary">Subscribe</button>
       </div>
     </div>
   </form>
@@ -54,10 +213,10 @@
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-      <h2>Who We Are</h2><br>
-      <h4>Tech for Impact is a youth-driven initiative that harnesses the power of technology to solve real-world problems in communities.</h4><br>
-      <p>From building digital tools that promote education access to creating platforms that address climate change, we focus on impactful innovation. We believe in collaborative growth, inclusive tech, and purpose-driven design. Our team consists of developers, climate advocates, educators, and change-makers committed to sustainable development.</p>
-      <br><button class="btn btn-default btn-lg">Connect With Us</button>
+      <h2>About Tech For Impact</h2><br>
+      <h4>We empower communities through technology, innovation, and impact-driven solutions.</h4><br>
+      <p>Tech For Impact is a youth-led initiative leveraging digital tools, education, and local knowledge to transform lives and solve real-world challenges. We believe in the power of technology to uplift communities, improve livelihoods, and inspire sustainable development.</p>
+      <br><button class="btn btn-default btn-lg">Learn More</button>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-signal logo"></span>
@@ -65,40 +224,60 @@
   </div>
 </div>
 
-<!-- Vision & Mission -->
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
-    </div>
-    <div class="col-sm-8">
-      <h2>Our Purpose</h2><br>
-      <h4><strong>MISSION:</strong> To drive innovation for development by building and deploying tech-based solutions that empower communities and foster resilience.</h4><br>
-      <p><strong>VISION:</strong> A world where technology bridges gaps in education, health, climate, and opportunity—leaving no one behind.</p>
-    </div>
-  </div>
-</div>
-
 <!-- Services Section -->
 <div id="services" class="container-fluid text-center">
-  <h2>OUR SOLUTIONS</h2>
-  <h4>What We Build</h4>
+  <h2>SERVICES</h2>
+  <h4>What We Do</h4>
   <br>
   <div class="row slideanim">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-education logo-small"></span>
-      <h4>EdTech</h4>
-      <p>Platforms that promote inclusive, quality education and skills development.</p>
+      <h4>Digital Literacy</h4>
+      <p>Training youth and communities in essential tech skills.</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>Green Tech</h4>
-      <p>Tools that support climate adaptation, awareness, and environmental sustainability.</p>
+      <h4>Climate Tech</h4>
+      <p>Innovating for climate resilience and sustainability.</p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-phone logo-small"></span>
-      <h4>Mobile Apps</h4>
-      <p>Innovative mobile solutions that address local community needs.</p>
+      <span class="glyphicon glyphicon-globe logo-small"></span>
+      <h4>Community Engagement</h4>
+      <p>Collaborative solutions for local and global problems.</p>
     </div>
   </div>
 </div>
+
+<!-- Portfolio Section -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br>
+  <h4>Our Impact Projects</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="tech-training.jpg" alt="Training Program">
+        <p><strong>Youth Bootcamp</strong></p>
+        <p>Equipping youth with coding and business skills.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="climate-initiative.jpg" alt="Climate Action">
+        <p><strong>Climate Action Lab</strong></p>
+        <p>Innovative approaches to tackle the climate crisis.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="community.jpg" alt="Community Projects">
+        <p><strong>Village Tech Hubs</strong></p>
+        <p>Empowering rural areas with digital solutions.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact section can follow next -->
+
+</body>
+</html>
